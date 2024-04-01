@@ -1,20 +1,8 @@
-h1, h2 {
-	  font-family: Arial;
-	  color: grey;
-	}
-	
-	
-	h1 {
-	  border-bottom：1px solid black;
-	}
-	
-	p {
-	  color: maroon;
-	}
-	body{
-	color: royalblue;
+body{
+  color: royalblue;
 	color: rgb(65, 105, 225);
 	color: #4169E1CC;
 	color: rgba(39,177,182,0.8);
 	color: #2775b6CC;
+	background-color: #4169E1
 }
