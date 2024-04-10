@@ -80,5 +80,26 @@ h1,h2{
     margin-top: 30px;
 }
 
+.cd{
+    font-style:italic;
+}
+.artist{
+    font-weight:bold;
+}
+span{
+    width:100000px;
+    margin:1000000px 100000px 100000px 1000000px;
 
+    
+}
+.elixirs a:link {
+    color:#007e7e;
+}
+.elixirs a:visited{
+    color:#333333;
+}
+.elixirs a:hover{
+    background: #f88396;
+    color:#0d5353;
+}
 
