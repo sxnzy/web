@@ -58,17 +58,19 @@ p.guarantee{
     text-align:center;
     
 }
-
 h1,h2{
     color:#007e7e;
 }
-h2{
+
+
+.elixirs h2{
     color:black;
 }
 
-div h2{
-    color:black;
+.elixirs h3{
+    color:#d12c47;
 }
+
 .elixirs {
     line-height: 1em;
     line-height: 1;
