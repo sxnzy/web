@@ -1,0 +1,28 @@
+/*多余的css之后应该要加*/
+body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.__variable_ecbd77 {
+    --noto-sans-sc: "__Noto_Sans_SC_ecbd77";
+}
+
+.__variable_f7c849 {
+    --noto-sans-kr: "__Noto_Sans_KR_f7c849";
+}
+.__variable_50947a {
+    --noto-sans-jp: "__Noto_Sans_JP_50947a";
+}
+.__variable_16859b {
+    --noto-sans-cy: "__Noto_Sans_16859b";
+}
+.__variable_bfed6e {
+    --austin: "__austin_bfed6e", "__austin_Fallback_bfed6e";
+}
+.__variable_abf3df {
+    --met-sans-serif: "__metSans_abf3df", "__metSans_Fallback_abf3df";
+}

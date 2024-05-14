@@ -1,3 +1,22 @@
+body {
+    --met-sans: var(--met-sans-serif), var(--noto-sans-cy), var(--noto-sans-jp), var(--noto-sans-kr), var(--noto-sans-sc);
+    background: var(--color-site-background);
+    font-family: var(--met-sans);
+    -webkit-font-smoothing: antialiased; 
+    color: var(--color-text);
+    font-size: var(--textsize-s);
+    font-weight: 400;
+    line-height: 1.5555;
+    line-height: 1;
+    display: block;
+    margin: 0px;
+}
+section{
+    scroll-margin-top: 80px;
+    display: block;
+    unicode-bidi: isolate;
+}
+
 .homepage-promos_promo__yutTN {
     display: flex;
     flex-direction:column;
@@ -5,16 +24,7 @@
     margin-right: auto;
     max-width: var(--productive-width-max);
     width: 100%;
-    @media screen and (min-width: base.$breakpoint-m) {
-		flex-direction: row;
-	}
-
-	&:nth-child(even) {
-		@media screen and (min-width: base.$breakpoint-m) {
-			flex-direction: row-reverse;
-		}
-	}
-
+    flex-direction: row;
 }
 .homepage-promos_imageWrapper__Uhhjm {
     display: flex;
@@ -51,7 +61,7 @@
 
 }
 .homepage-promos_bodyText__jD6qh{
-    line-height: 1.33333; //TODO lets get rid of "short-body" and "long-body" and just figure out a standard here.
+    line-height: 1.33333;
 	margin-bottom: var(--spacing-xs);
 }
 .figure {
@@ -61,20 +71,19 @@
 	position: relative;
 	width: 100%;
 }
-body {
-    --met-sans: var(--met-sans-serif), var(--noto-sans-cy), var(--noto-sans-jp), var(--noto-sans-kr), var(--noto-sans-sc);
-    background: var(--color-site-background);
-    font-family: var(--met-sans);
-    -webkit-font-smoothing: antialiased; 
-    color: var(--color-text);
-    font-size: var(--textsize-s);
-    font-weight: 400;
-    line-height: 1.5555;
-    line-height: 1;
-    display: block;
-    margin: 8px;
+.homepage-promos_promoContainer_Rn60M{
+    display: grid;
+    grid-gap:var(--spacing-s);
+    gap:var(--spacing-s);
+
+    margin-bottom:var(--spacing-s);
 }
-body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     border: 0;
     font: inherit;
     font-size: 100%;
@@ -82,7 +91,7 @@ body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, e
     padding: 0;
     vertical-align: baseline;
 }
-.root {
+:root {
     --spacing-micro: calc(8px + 0.25vw);
     --spacing-xxs: calc(16px + 0.5vw);
     --spacing-xs: calc(24px + 0.75vw);
@@ -156,5 +165,6 @@ body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, e
     --color-component-background-2: var(--color-white);
     --color-focus-state-outline: var(--color-blue-100);
     --color-focus-state-background: var(--color-blue-600);
-    --masthead-height: 80px
+    --masthead-height: 80px；
+    
 }
