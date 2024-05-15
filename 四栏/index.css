@@ -10,13 +10,19 @@ body {
     line-height: 1;
     display: block;
     margin: 0px;
+    
+}
+.homepage-promos_promoContainer_Rn60M{
+    display: grid;
+    grid-gap:var(--spacing-s);
+    gap:var(--spacing-s);
+    margin-bottom:var(--spacing-s);
 }
 section{
     scroll-margin-top: 80px;
     display: block;
     unicode-bidi: isolate;
 }
-
 .homepage-promos_promo__yutTN {
     display: flex;
     flex-direction:column;
@@ -31,6 +37,23 @@ section{
     flex-basis: 50%;
     overflow: hidden;
     position: relative;
+}
+.redundant-link_redundantlink__b5TFR{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+a{
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset:  0.2em;
+    touch-action: manipulation;
+    transition: all 0.2s;
+	
 }
 .homepage-promos_copyWrapper__rI20L {
     background-color: var(--darkreader-bg--color-component-background);
@@ -71,14 +94,37 @@ section{
 	position: relative;
 	width: 100%;
 }
-.homepage-promos_promoContainer_Rn60M{
-    display: grid;
-    grid-gap:var(--spacing-s);
-    gap:var(--spacing-s);
+.alt{
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: var(--textsize-xl);
+    margin-bottom: var(--spacing-micro);
+    font-family: inherit;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 
-    margin-bottom:var(--spacing-s);
+    
+}/*h2图片样式*/
+
+a{
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset:  0.2em;
+    touch-action: manipulation;
+    transition: all 0.2s;
+	
 }
-
+p {
+	margin-bottom: var(--spacing-paragraph);
+    margin-bottom: 0;
+}
 div{
     display: block;
     unicode-bidi: isolate;
@@ -91,6 +137,11 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     padding: 0;
     vertical-align: baseline;
 }
+@import "../base/base";
+
+
+
+
 :root {
     --spacing-micro: calc(8px + 0.25vw);
     --spacing-xxs: calc(16px + 0.5vw);
