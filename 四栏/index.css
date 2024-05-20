@@ -1,3 +1,4 @@
+
 body {
     --met-sans: var(--met-sans-serif), var(--noto-sans-cy), var(--noto-sans-jp), var(--noto-sans-kr), var(--noto-sans-sc);
     background: var(--color-site-background);
@@ -12,136 +13,6 @@ body {
     margin: 0px;
     
 }
-.homepage-promos_promoContainer_Rn60M{
-    display: grid;
-    grid-gap:var(--spacing-s);
-    gap:var(--spacing-s);
-    margin-bottom:var(--spacing-s);
-}
-section{
-    scroll-margin-top: 80px;
-    display: block;
-    unicode-bidi: isolate;
-}
-.homepage-promos_promo__yutTN {
-    display: flex;
-    flex-direction:column;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: var(--productive-width-max);
-    width: 100%;
-    flex-direction: row;
-}
-.homepage-promos_imageWrapper__Uhhjm {
-    display: flex;
-    flex-basis: 50%;
-    overflow: hidden;
-    position: relative;
-}
-.redundant-link_redundantlink__b5TFR{
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-a{
-    color: inherit;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset:  0.2em;
-    touch-action: manipulation;
-    transition: all 0.2s;
-	
-}
-.homepage-promos_copyWrapper__rI20L {
-    background-color: var(--darkreader-bg--color-component-background);
-    display: flex;
-    flex-basis: 50%;
-}
-.homepage-promos_figure__20BGo{
-    width: 530px;
-    height: 150px;
-}
-.homepage-promos_promo__yutTN:nth-child(2n) {
-        flex-direction: row-reverse;
-}
-.homepage-promos_promoContainer{
-    display: grid;
-	gap: var(--spacing-s);
-	margin-bottom: var(--spacing-m);
-
-}
-.homepage-promos_copy__AHUZb{
-    align-items: flex-start;
-	align-self: center;
-	display: flex;
-	flex-direction: column;
-	opacity: 1;
-	padding: calc(32px + 1vw);
-	width: 100%;
-
-}
-.homepage-promos_bodyText__jD6qh{
-    line-height: 1.33333;
-	margin-bottom: var(--spacing-xs);
-}
-.figure {
-	aspect-ratio: 3/2;
-	display: block;
-	line-height: 0;
-	position: relative;
-	width: 100%;
-}
-.alt{
-    font-weight: 500;
-    line-height: 1.1;
-    font-size: var(--textsize-xl);
-    margin-bottom: var(--spacing-micro);
-    font-family: inherit;
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-
-    
-}/*h2图片样式*/
-
-a{
-    color: inherit;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset:  0.2em;
-    touch-action: manipulation;
-    transition: all 0.2s;
-	
-}
-p {
-	margin-bottom: var(--spacing-paragraph);
-    margin-bottom: 0;
-}
-div{
-    display: block;
-    unicode-bidi: isolate;
-}
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-@import "../base/base";
-
-
-
-
 :root {
     --spacing-micro: calc(8px + 0.25vw);
     --spacing-xxs: calc(16px + 0.5vw);
@@ -216,6 +87,190 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     --color-component-background-2: var(--color-white);
     --color-focus-state-outline: var(--color-blue-100);
     --color-focus-state-background: var(--color-blue-600);
-    --masthead-height: 80px；
+    --color-masthead-bg--active: rgba(0,0,0,.4);
+    --color-masthead-subitem-bg: rgba(0,0,0,.2);
+    --color-masthead-bg: #e4002b;
+    --color-masthead-text: #fff;
+    --masthead-height: 60px;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.homepage-promos_promoContainer_Rn60M{
+    display: grid;
+    grid-gap:var(--spacing-s);
+    gap:var(--spacing-s);
+    margin-bottom:var(--spacing-s);
+    /* box-sizing: inherit; */
+}
+section{
+    scroll-margin-top: 80px;
+    display: block;
+    unicode-bidi: isolate;
+    @media only screen and (min-width:breakpoint-m) {
+		scroll-margin-top: 20px	
+	}
+}
+div{
+    unicode-bidi: isolate;
+}
+.homepage-promos_promo__yutTN {
+    display: flex;
+    flex-direction:column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--productive-width-max);
+    width: 100%;
+    flex-direction: row;
+    /* box-sizing: inherit; */
+}
+.homepage-promos_promoContainer_Rn60M{
+    display: grid;
+    grid-gap:var(--spacing-s);
+    gap:var(--spacing-s);
+    margin-bottom:var(--spacing-s);
+    /* box-sizing: inherit; */
+}
+.homepage-promos_imageWrapper__Uhhjm {
+    display: flex;
+    flex-basis: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.redundant-link_redundantlink__b5TFR{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+a{
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset:  0.2em;
+    touch-action: manipulation;
+    transition: all 0.2s;
+    &:visited,
+	&:hover {
+		color: inherit;
+	}
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+
+}
+.homepage-promos_copyWrapper__rI20L {
+    background-color: var(--darkreader-bg--color-component-background);
+    display: flex;
+    flex-basis: 50%;
+}
+.homepage-promos_figure__20BGo{
+    /* width: 530px;
+    height: 150px; */
+    aspect-ratio: 3/2;
+    display: block;
+    line-height: 0;
+    position: relative;
+    width: 100%;
+}
+.homepage-promos_promo__yutTN:nth-child(2n) {
+        flex-direction: row-reverse;
+}
+.homepage-promos_promoContainer{
+    display: grid;
+	gap: var(--spacing-s);
+	margin-bottom: var(--spacing-m);
+
+}
+.homepage-promos_copy__AHUZb{
+    align-items: flex-start;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	opacity: 1;
+	padding: calc(32px + 1vw);
+	width: 100%;
+
+}
+.homepage-promos_bodyText__jD6qh{
+    line-height: 1.33333;
+	margin-bottom: var(--spacing-xs);
+}
+/* .figure {
+	aspect-ratio: 3/2;
+	display: block;
+	line-height: 0;
+	position: relative;
+	width: 100%;
+} */
+figure{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+.alt{
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: var(--textsize-xl);
+    margin-bottom: var(--spacing-micro);
+    font-family: inherit;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
     
+}/*h2图片样式*/
+* *{
+    box-sizing: inherit;
+
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset:  0.2em;
+    touch-action: manipulation;
+    transition: all 0.2s;
+	
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+p {
+	margin-bottom: var(--spacing-paragraph);
+    font-family: inherit;
+    max-width: 50em;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
