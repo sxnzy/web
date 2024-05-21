@@ -105,16 +105,13 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     display: grid;
     grid-gap:var(--spacing-s);
     gap:var(--spacing-s);
-    margin-bottom:var(--spacing-s);
-    /* box-sizing: inherit; */
+    margin-bottom:var(--spacing-m);
+    box-sizing: inherit;
 }
 section{
     scroll-margin-top: 80px;
     display: block;
     unicode-bidi: isolate;
-    @media only screen and (min-width:breakpoint-m) {
-		scroll-margin-top: 20px	
-	}
 }
 div{
     unicode-bidi: isolate;
@@ -127,13 +124,6 @@ div{
     max-width: var(--productive-width-max);
     width: 100%;
     flex-direction: row;
-    /* box-sizing: inherit; */
-}
-.homepage-promos_promoContainer_Rn60M{
-    display: grid;
-    grid-gap:var(--spacing-s);
-    gap:var(--spacing-s);
-    margin-bottom:var(--spacing-s);
     /* box-sizing: inherit; */
 }
 .homepage-promos_imageWrapper__Uhhjm {
@@ -150,24 +140,26 @@ div{
     width: 100%;
     z-index: 1;
 }
-a{
-    color: inherit;
+a {
     font-weight: 600;
     text-decoration: underline;
-    text-underline-offset:  0.2em;
+    text-underline-offset: .2em;
     touch-action: manipulation;
-    transition: all 0.2s;
-    &:visited,
-	&:hover {
-		color: inherit;
-	}
-
-	&:hover,
-	&:focus {
-		text-decoration: none;
-	}
-
+    transition: all .2s;
 }
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+a,a:hover, a:visited{
+    color:inherit;
+}
+a,button,input{
+    font-family: inherit;
+}
+/*a出错*/
+
 .homepage-promos_copyWrapper__rI20L {
     background-color: var(--darkreader-bg--color-component-background);
     display: flex;
@@ -205,6 +197,7 @@ a{
     line-height: 1.33333;
 	margin-bottom: var(--spacing-xs);
 }
+
 /* .figure {
 	aspect-ratio: 3/2;
 	display: block;
@@ -220,12 +213,8 @@ figure{
     margin-inline-start: 40px;
     unicode-bidi: isolate;
 }
-.alt{
-    font-weight: 500;
-    line-height: 1.1;
-    font-size: var(--textsize-xl);
-    margin-bottom: var(--spacing-micro);
-    font-family: inherit;
+
+.h2{
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -234,24 +223,26 @@ figure{
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
-
-    
 }/*h2图片样式*/
+h2{
+    font-size: var(--textsize-xl);
+}
+h2,h3{
+    font-weight: 500;
+    line-height: 1.1;
+}
+h1,h2,h3{
+    margin-bottom: var(--spacing-micro);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: inherit;
+}
 * *{
     box-sizing: inherit;
 
 }
 *{
     box-sizing: border-box;
-}
-a{
-    color: inherit;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset:  0.2em;
-    touch-action: manipulation;
-    transition: all 0.2s;
-	
 }
 
 p:last-child{
@@ -265,12 +256,4 @@ p {
 div{
     display: block;
     unicode-bidi: isolate;
-}
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
 }
