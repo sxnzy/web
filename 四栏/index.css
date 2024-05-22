@@ -28,6 +28,12 @@ body {
     --width--scrollbar-agnostic: calc(var(--max-width-unclamped) - (100vw - 100%));
     --productive-width-max: min(var(--width--scrollbar-agnostic),var(--max-component-size));
     --spacing-component-margin: calc((100% - var(--productive-width-max)) / 2);
+    --noto-sans-sc: var(--noto-sans-sc-ecd77)"__Noto_Sans_SC_ecbd77";
+    --noto-sans-kr: "__Noto_Sans_KR_f7c849";
+    --noto-sans-jp: "__Noto_Sans_JP_50947a";
+    --noto-sans-cy: "__Noto_Sans_16859b";
+    --austin: "__austin_bfed6e", "__austin_Fallback_bfed6e";
+    --met-sans-serif: "__metSans_abf3df", "__metSans_Fallback_abf3df";
     --spacing-paragraph: 0.75em;
     --textsize-xxs: calc(0.75rem + (14 - 12) * (100vw - 375px) / (1440 - 375));
     --textsize-xs: calc(0.875rem + (16 - 14) * (100vw - 375px) / (1440 - 375));
@@ -93,29 +99,21 @@ body {
     --color-masthead-text: #fff;
     --masthead-height: 60px;
 }
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
+
 .homepage-promos_promoContainer_Rn60M{
     display: grid;
     grid-gap:var(--spacing-s);
     gap:var(--spacing-s);
     margin-bottom:var(--spacing-m);
-    box-sizing: inherit;
+    /* box-sizing: inherit; */
 }
 section{
     scroll-margin-top: 80px;
     display: block;
     unicode-bidi: isolate;
+    
 }
-div{
-    unicode-bidi: isolate;
-}
+
 .homepage-promos_promo__yutTN {
     display: flex;
     flex-direction:column;
@@ -123,7 +121,7 @@ div{
     margin-right: auto;
     max-width: var(--productive-width-max);
     width: 100%;
-    flex-direction: row;
+    flex-direction: row; 
     /* box-sizing: inherit; */
 }
 .homepage-promos_imageWrapper__Uhhjm {
@@ -145,10 +143,10 @@ a {
     text-decoration: underline;
     text-underline-offset: .2em;
     touch-action: manipulation;
-    transition: all .2s;
+    transition: all 0.2s;
+    
 }
 a:-webkit-any-link {
-    color: -webkit-link;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -161,7 +159,7 @@ a,button,input{
 /*a出错*/
 
 .homepage-promos_copyWrapper__rI20L {
-    background-color: var(--darkreader-bg--color-component-background);
+    background-color: var(--color-component-background);
     display: flex;
     flex-basis: 50%;
 }
@@ -214,7 +212,8 @@ figure{
     unicode-bidi: isolate;
 }
 
-.h2{
+.alt{
+    
     display: block;
     font-size: 1.5em;
     margin-block-start: 0.83em;
@@ -222,9 +221,18 @@ figure{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    unicode-bidi: isolate;
+    
 }/*h2图片样式*/
+abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, div,caption, center, cite, code, dd, del, details, dfn, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2,h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
 h2{
+    vertical-align: baseline;
     font-size: var(--textsize-xl);
 }
 h2,h3{
@@ -257,3 +265,6 @@ div{
     display: block;
     unicode-bidi: isolate;
 }
+
+
+/*span改一下可能,找一下超链接a标签问题，*/
