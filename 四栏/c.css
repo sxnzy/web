@@ -26,3 +26,20 @@ body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, e
 .__variable_abf3df {
     --met-sans-serif: "__metSans_abf3df", "__metSans_Fallback_abf3df";
 }
+h2{
+    font-size: var(--textsize-xl);
+}
+h2{
+    font-size: var(--textsize-xl);
+}
+.alt{
+    
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}/*h2图片样式*/
